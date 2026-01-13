@@ -1,0 +1,14 @@
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/bin/Debug/net10.0/cs-learning
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/bin/Debug/net10.0/cs-learning.deps.json
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/bin/Debug/net10.0/cs-learning.runtimeconfig.json
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/bin/Debug/net10.0/cs-learning.dll
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/bin/Debug/net10.0/cs-learning.pdb
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/cs-learning.GeneratedMSBuildEditorConfig.editorconfig
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/cs-learning.AssemblyInfoInputs.cache
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/cs-learning.AssemblyInfo.cs
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/cs-learning.csproj.CoreCompileInputs.cache
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/cs-learning.dll
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/refint/cs-learning.dll
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/cs-learning.pdb
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/cs-learning.genruntimeconfig.cache
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/ref/cs-learning.dll
