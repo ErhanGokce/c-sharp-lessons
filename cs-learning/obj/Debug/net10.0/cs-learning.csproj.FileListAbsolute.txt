@@ -12,3 +12,4 @@
 /Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/cs-learning.pdb
 /Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/cs-learning.genruntimeconfig.cache
 /Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/ref/cs-learning.dll
+/Users/erhangokce/RiderProjects/cs-learning/cs-learning/obj/Debug/net10.0/cs-learning.sourcelink.json
