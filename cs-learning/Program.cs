@@ -101,12 +101,112 @@ namespace HelloWorld
             //double g = Math.Max(x, y);//get higher value between these 2 variable
             //double h = Math.Min(x, y); //get lower value between these 2 variable */
 
-            Random random = new Random();
+            /* Random random = new Random();
             //int num = random.Next(1, 20);
             //double num = random.NextDouble();
             double num = random.NextDouble() * (20 - 5) + 5;
             
-            Console.WriteLine(num);
+            Console.WriteLine(num); */
+
+            /* Console.WriteLine("What is the length of the a side?");
+            double a = Convert.ToDouble(Console.ReadLine());
+            
+            Console.WriteLine("What is the lenght of the b side?");
+            double b = Convert.ToDouble(Console.ReadLine());
+
+            double hypotenus = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
+            Console.WriteLine("The hypotenus is: " + hypotenus); */
+
+            //String fullName = "Erhan Gokce";
+            //fullName = fullName.ToUpper();
+            //fullName = fullName.ToLower();
+            //Console.WriteLine(fullName);
+
+            //String phoneNumber = "555-555-5555";
+            //phoneNumber = phoneNumber.Replace("-", "/");
+            //String userName = fullName.Insert(0, "Mr.");
+
+            //String firstName = fullName.Substring(0, 5);// (başlangıç indexi, karakter sayısı)
+            //String lastName = fullName.Substring(6, 5);
+
+            //Console.WriteLine("I am " + firstName + " " + lastName);
+
+            //Console.WriteLine(phoneNumber);
+            //Console.WriteLine(userName);
+            
+            /*Console.WriteLine("Enter ur age:  ");
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            if (age >= 18)
+            {
+                Console.WriteLine("You are an adult");
+            }
+            
+            else if (age < 0)
+            {
+                Console.WriteLine("Go born first lol");  
+            }
+
+            else
+            {
+                Console.WriteLine("You are not an adult");
+            } */
+
+            /*Console.WriteLine("Enter your name: ");
+            String name = Console.ReadLine();
+
+            if (name == "")
+            {
+                Console.WriteLine("You forgot type your name");
+            }
+
+            else
+            {
+                Console.WriteLine("Hello, " + name);
+            } */
+            // == equal, != not equal
+
+            /*Console.WriteLine("What is the day today? ");
+            String day = Console.ReadLine();
+
+            switch (day)
+            {
+                case "Monday":
+                    Console.WriteLine("Today is " + day);
+                    break;
+                case "Tuesday":
+                    Console.WriteLine("Today is Tuesday");
+                    break;
+                case "Wednesday":
+                    Console.WriteLine("Today is Wednesday!");
+                    break;
+                case "Thursday":
+                    Console.WriteLine("Today is Thursday");
+                    break;
+                case "Friday":
+                    Console.WriteLine("Today is Friday!");
+                    break;
+                case "Saturday":
+                    Console.WriteLine("Today is Saturday");
+                    break;
+                case "Sunday":
+                    Console.WriteLine("Today is Sunday");
+                    break;
+                default:
+                    Console.WriteLine(day + " is a valid day");
+                    break;
+            } */
+            
+            //logical operators, && = AND, || = OR
+
+            Console.WriteLine("What is the tempreture in C?");
+            double temp = Convert.ToDouble(Console.ReadLine());
+
+            if (temp >= 20 && temp <= 30)
+            {
+                Console.WriteLine("Tempreture is good");
+            }
+            
             
             Console.ReadKey();
         }
