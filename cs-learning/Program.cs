@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -199,15 +200,110 @@ namespace HelloWorld
             
             //logical operators, && = AND, || = OR
 
-            Console.WriteLine("What is the tempreture in C?");
+            /* Console.WriteLine("What is the tempreture in C?");
             double temp = Convert.ToDouble(Console.ReadLine());
 
             if (temp >= 20 && temp <= 30)
             {
                 Console.WriteLine("Tempreture is good");
+            } */
+            
+            //while loop
+            /* Console.WriteLine("Enter your name:");
+            String name = Console.ReadLine();
+
+            while (name == "")
+            {
+                Console.WriteLine("Enter your name:");
+                name = Console.ReadLine();
             }
+            Console.WriteLine("Hello, " + name); */
             
-            
+            //for loop
+            //for (int i = 0; i < 10; i++) // i = index
+            //{
+            //    Console.WriteLine(i);
+            //}
+           /* for (int i = 16; i > 5; i--)
+            {
+                Console.WriteLine(i);
+            } */
+           
+           //nested loop
+           /* Console.WriteLine("How many rows?");
+           int rows = Convert.ToInt32(Console.ReadLine());
+
+           Console.WriteLine("How many columns?");
+           int columns = Convert.ToInt32(Console.ReadLine());
+
+           Console.WriteLine("What symbol do you want to use?");
+           String symbol = Console.ReadLine();
+
+           for (int i = 0; i < rows; i++)
+           {
+               for (int m = 0; m < columns; m++)
+               {
+                   Console.Write(symbol);
+               }
+
+               Console.WriteLine();
+           } */
+           
+           //Number Guess Game
+           int min = 0;
+           int max = 100;
+           bool playagain = true;
+           int guess;
+           int guesses;
+           int number;
+           Random random = new Random();
+           String response;
+
+           while (playagain)
+           {
+               guess = 0;
+               guesses = 0;
+               response = "";
+               number = random.Next(min, max + 1);
+
+               while (guess != number)
+               {
+                   Console.WriteLine("Guess the number between " + min + "-" + max + ": ");
+                   guess = Convert.ToInt32(Console.ReadLine());
+                   Console.WriteLine("Guess: " + guess);
+
+                   if (guess > number)
+                   {
+                       Console.WriteLine(guess + " too high!");
+                   }
+                   
+                   else if (guess < number)
+                   {
+                       Console.WriteLine(guess + " too low!");
+                   }
+                   guesses++;
+               }
+
+               Console.WriteLine("Number: " + number);
+               Console.WriteLine("Congratulations YOU WIN!");
+               Console.WriteLine("Guesses: " + guesses);
+
+               Console.WriteLine("Do you want to play again? (Y/N)");
+               response = (Console.ReadLine().ToUpper());
+
+               if (response == "Y")
+               {
+                   playagain = true;
+               }
+               
+               else if (response == "N")
+               {
+                   playagain = false;
+               }
+           }
+
+           Console.WriteLine("Thanks for playing :)");
+                
             Console.ReadKey();
         }
     }
