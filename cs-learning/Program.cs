@@ -250,7 +250,7 @@ namespace HelloWorld
            } */
            
            //Number Guess Game
-           int min = 0;
+           /* int min = 0;
            int max = 100;
            bool playagain = true;
            int guess;
@@ -302,7 +302,91 @@ namespace HelloWorld
                }
            }
 
-           Console.WriteLine("Thanks for playing :)");
+           Console.WriteLine("Thanks for playing :)"); */
+           
+           //Rock, Paper, Scissors Game
+
+           String player;
+           String computer;
+           bool playAgain = true;
+           Random random = new Random();
+
+           while (playAgain)
+           {
+               player = "";
+               computer = "";
+               
+               while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
+               {
+                   Console.WriteLine("Enter ROCK, FIRST OR SCISSORS:");
+                   player = Console.ReadLine().ToUpper();
+               }
+
+               switch (random.Next(1, 4))
+               {
+                   case 1:
+                       computer = "ROCK";
+                       break;
+                   case 2:
+                       computer = "PAPER";
+                       break;
+                   case 3:
+                       computer = "SCISSORS";
+                       break;
+               }
+
+               switch (player)
+               {
+                   case "ROCK":
+                       if (computer == "ROCK")
+                       {
+                           Console.WriteLine("It is a draw!");
+                       }
+                       else if (computer == "PAPER")
+                       {
+                           Console.WriteLine("You lose!");
+                       }
+                       else
+                       {
+                           Console.WriteLine("You WIN!");
+                       }
+                       break;
+                   
+                   case "PAPER":
+                       if (computer == "ROCK")
+                       {
+                           Console.WriteLine("It is a WIN!");
+                       }
+                       else if (computer == "PAPER")
+                       {
+                           Console.WriteLine("It is a DRAW!");
+                       }
+                       else
+                       {
+                           Console.WriteLine("You lose!");
+                       }
+                       break;
+                   case "SCISSORS":
+                       if (computer == "ROCK")
+                       {
+                           Console.WriteLine("You lose!");
+                       }
+                       else if (computer == "PAPER")
+                       {
+                           Console.WriteLine("You WIN!");
+                       }
+                       else
+                       {
+                           Console.WriteLine("It is a DRAW");
+                       }
+                       break;
+               }
+               
+                   
+
+               Console.WriteLine("Player: " + player);
+               Console.WriteLine("Computer: " + computer);
+           }
                 
             Console.ReadKey();
         }
