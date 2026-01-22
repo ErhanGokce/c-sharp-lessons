@@ -306,10 +306,11 @@ namespace HelloWorld
            
            //Rock, Paper, Scissors Game
 
-           String player;
+           /* String player;
            String computer;
            bool playAgain = true;
            Random random = new Random();
+           String answer = "";
 
            while (playAgain)
            {
@@ -318,7 +319,7 @@ namespace HelloWorld
                
                while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
                {
-                   Console.WriteLine("Enter ROCK, FIRST OR SCISSORS:");
+                   Console.WriteLine("Enter ROCK, PAPER OR SCISSORS:");
                    player = Console.ReadLine().ToUpper();
                }
 
@@ -381,14 +382,76 @@ namespace HelloWorld
                        }
                        break;
                }
-               
-                   
-
                Console.WriteLine("Player: " + player);
                Console.WriteLine("Computer: " + computer);
+               
+               Console.WriteLine("Would you like to play again? (Y/N)");
+               answer = Console.ReadLine().ToUpper();
+
+               if (answer == "Y")
+               {
+                   playAgain = true;
+               }
+               else if (answer == "N")
+               {
+                   playAgain = false;
+               }
+           } */
+
+           double num1 = 0;
+           double num2 = 0;
+           double result = 0;
+           bool count = true;
+           String countAgain = "";
+
+           Console.WriteLine("Enter number 1:");
+           num1 = Convert.ToDouble(Console.ReadLine());
+
+           Console.WriteLine("Enter number 2:");
+           num2 = Convert.ToDouble(Console.ReadLine());
+
+           Console.WriteLine("Enter an option:");
+           Console.WriteLine("+ : Add");
+           Console.WriteLine("- : Substract");
+           Console.WriteLine("* : Multiply");
+           Console.WriteLine("/ : Divide");
+           
+           while (count) 
+           {
+
+           switch (Console.ReadLine())
+           {
+               case "+":
+                   result = num1 + num2;
+                   Console.WriteLine($"Result: {num1} + {num2} = " + result);
+                   break;
+               case "-":
+                   result = num1 - num2;
+                   Console.WriteLine($"Result: {num1} - {num2} = " + result);
+                   break;
+               case "*":
+                   result = num1 * num2;
+                   Console.WriteLine($"Result: {num1} + {num2} = " + result);
+                   break;
+               case "/":
+                   result = num1 / num2;
+                   Console.WriteLine($"Resukt: {num1} / {num2} = " + result);
+                   break;
+               
+                   
            }
-                
-            Console.ReadKey();
+           }
+           Console.WriteLine("Would you like to count something again? (Y/N)");
+           countAgain = Console.ReadLine().ToUpper();
+
+           if (countAgain == "Y")
+           {
+               count = true;
+           }
+           else if (countAgain == "N")
+           {
+               count = false;
+           }
         }
     }
     
