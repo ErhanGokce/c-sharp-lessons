@@ -397,7 +397,8 @@ namespace HelloWorld
                    playAgain = false;
                }
            } */
-
+            
+           /*
            double num1 = 0;
            double num2 = 0;
            double result = 0;
@@ -451,9 +452,94 @@ namespace HelloWorld
            else if (countAgain == "N")
            {
                count = false;
-           }
-        }
-    }
+           } */
+           
+          /* Console.WriteLine("What is the day today? ");
+           String day = Console.ReadLine();
+
+           switch (day)
+           {
+               case "Monday":
+                   Console.WriteLine("Today is " + day);
+                   break;
+               case "Tuesday":
+                   Console.WriteLine("Today is Tuesday");
+                   break;
+               case "Wednesday":
+                   Console.WriteLine("Today is Wednesday!");
+                   break;
+               case "Thursday":
+                   Console.WriteLine("Today is Thursday");
+                   break;
+               case "Friday":
+                   Console.WriteLine("Today is Friday!");
+                   break;
+               case "Saturday":
+                   Console.WriteLine("Today is Saturday");
+                   break;
+               case "Sunday":
+                   Console.WriteLine("Today is Sunday");
+                   break;
+               default:
+                   Console.WriteLine(day + " is a valid day");
+                   break;
+           } */
+          
+         /* // Calculater Program
+          double num1 = 0;
+          double num2 = 0;
+          double result = 0;
+          
+          Console.WriteLine("--------------------");
+          Console.WriteLine("Calculator Program");
+          Console.WriteLine("--------------------");
+
+          Console.WriteLine("Enter number 1:");
+          num1 = Convert.ToDouble(Console.ReadLine());
+          
+          Console.WriteLine("Enter number 2:");
+          num2 = Convert.ToDouble(Console.ReadLine());
+
+          Console.WriteLine("Options: ");
+          Console.WriteLine("+ : Plus");
+          Console.WriteLine("- : Minus");
+          Console.WriteLine("* : Multiply");
+          Console.WriteLine("/ : Divide");
+          Console.Write("Enter option:");
+
+          switch (Console.ReadLine())
+          {
+              case "+":
+                  result = num1 + num2;
+                  Console.WriteLine($"Result: {num1} + {num2} = " + result);
+                  break;
+              case "-":
+                  result = num1 - num2;
+                  Console.WriteLine($"Result: {num1} - {num2} =  " + result);
+                  break;
+              case "*":
+                  result = num1 * num2;
+                  Console.WriteLine($"Result: {num1} * {num2} = " + result);
+                  break;
+              case "/":
+                  result = num1 / num2;
+                  Console.WriteLine($"Result: {num1} / {num2} = " + result);
+                  break;
+              default:
+                  Console.WriteLine("Invalid option");
+                  break;
+          }
+          */
+         
+         //Race Game
+         String[] cars = { "BMW", "Mercedes", "Audi" };
+
+         for (int i = 0; i < cars.Length; i++)
+         {
+             Console.WriteLine(cars[i]);
+         }
+        } 
+    } 
     
 }
 
